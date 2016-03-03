@@ -15,6 +15,7 @@
 		A50B18481C8426EE008DDF21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50B18461C8426EE008DDF21 /* LaunchScreen.storyboard */; };
 		A50B18531C8426EE008DDF21 /* TTStretchHeaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A50B18521C8426EE008DDF21 /* TTStretchHeaderTests.m */; };
 		A50B185E1C8426EE008DDF21 /* TTStretchHeaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A50B185D1C8426EE008DDF21 /* TTStretchHeaderUITests.m */; };
+		A57332B51C85A5C000FFE2F9 /* TTStretchableTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A57332B41C85A5C000FFE2F9 /* TTStretchableTableHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		A50B18591C8426EE008DDF21 /* TTStretchHeaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTStretchHeaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50B185D1C8426EE008DDF21 /* TTStretchHeaderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTStretchHeaderUITests.m; sourceTree = "<group>"; };
 		A50B185F1C8426EE008DDF21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A57332B31C85A5C000FFE2F9 /* TTStretchableTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStretchableTableHeaderView.h; sourceTree = "<group>"; };
+		A57332B41C85A5C000FFE2F9 /* TTStretchableTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStretchableTableHeaderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				A50B18461C8426EE008DDF21 /* LaunchScreen.storyboard */,
 				A50B18491C8426EE008DDF21 /* Info.plist */,
 				A50B18381C8426EE008DDF21 /* Supporting Files */,
+				A57332B31C85A5C000FFE2F9 /* TTStretchableTableHeaderView.h */,
+				A57332B41C85A5C000FFE2F9 /* TTStretchableTableHeaderView.m */,
 			);
 			path = TTStretchHeader;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 			files = (
 				A50B18401C8426EE008DDF21 /* ViewController.m in Sources */,
 				A50B183D1C8426EE008DDF21 /* AppDelegate.m in Sources */,
+				A57332B51C85A5C000FFE2F9 /* TTStretchableTableHeaderView.m in Sources */,
 				A50B183A1C8426EE008DDF21 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +502,7 @@
 				A50B18641C8426EE008DDF21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A50B18651C8426EE008DDF21 /* Build configuration list for PBXNativeTarget "TTStretchHeaderTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +511,7 @@
 				A50B18671C8426EE008DDF21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A50B18681C8426EE008DDF21 /* Build configuration list for PBXNativeTarget "TTStretchHeaderUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +520,7 @@
 				A50B186A1C8426EE008DDF21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
