@@ -31,8 +31,9 @@
     UIImageView *headerImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 200)];
     headerImageView.contentMode = UIViewContentModeScaleAspectFill;
     headerImageView.clipsToBounds = YES;
-    headerImageView.image = [UIImage imageNamed:@"loginUUUTx"];    
-  
+    headerImageView.image = [UIImage imageNamed:@"loginUUUTx"];
+    self.headerView = [TTStretchableTableHeaderView new];
+    [self.headerView stretchHeaderForTableView:self.tableView tableViewwithView:headerImageView];
 }
 
 
@@ -50,8 +51,19 @@
     return cell;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 40;
+}
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    [self.headerView scrollViewDidScroll:scrollView];
+}
 
+- (void)viewDidLayoutSubviews
+{
+    [self.headerView resizeView];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
