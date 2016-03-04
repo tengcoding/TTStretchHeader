@@ -20,6 +20,5 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView;
 
-- (void)resizeView;
 
 @end

@@ -28,7 +28,7 @@
     self.tableView.showsVerticalScrollIndicator = NO;
     [self.view addSubview:self.tableView];
     
-    UIImageView *headerImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 200)];
+    UIImageView *headerImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 300)];
     headerImageView.contentMode = UIViewContentModeScaleAspectFill;
     headerImageView.clipsToBounds = YES;
     headerImageView.image = [UIImage imageNamed:@"loginUUUTx"];
@@ -42,7 +42,7 @@
     return 1;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 5;
+    return 20;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -60,10 +60,7 @@
     [self.headerView scrollViewDidScroll:scrollView];
 }
 
-- (void)viewDidLayoutSubviews
-{
-    [self.headerView resizeView];
-}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -50,10 +50,6 @@
     }
 }
 
-- (void)resizeView{
-   _initialFrame.size.width = _tableView.frame.size.width;
-    _view.frame = _initialFrame;
-    
-}
+
 
 @end
